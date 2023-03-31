@@ -11,3 +11,4 @@ RUN apt install -y build-essential \
                    python3 \
                    python3-pip
 RUN pip install -U scikit-learn concrete-ml==0.5.1
+git clone https://github.com/Juan-M-V/concrete-ml-fuzzer/blob/main/Dockerfile
