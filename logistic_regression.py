@@ -15,7 +15,7 @@ input_train, input_test, result_train, _ = train_test_split(
 # Start the concrete-ml logistic regression model
 concrete_model = lr_concrete()
 # Train
-concrete_model.fit(input_train, input_test)
+concrete_model.fit(input_train, result_train)
 
 # Compile FHE
 concrete_model.compile(input_train)
