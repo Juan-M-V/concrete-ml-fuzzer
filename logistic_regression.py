@@ -31,4 +31,4 @@ scikit_model.fit(input_train, result_train)
 # Get scikit prediction
 prediction = scikit_model.predict(input_test)
 
-assert(fhe_pred == prediction)
+assert((fhe_pred == prediction).all())
